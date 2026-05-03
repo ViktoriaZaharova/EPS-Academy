@@ -32,13 +32,19 @@
 
           <nav class="nav-menu">
             <ul class="menu my-ul">
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
+              <li><a href="#about" class="go_to">О нас</a></li>
+              <li><a href="#portfolio" class="go_to">Примеры работ</a></li>
+              <li><a href="#contacts" class="go_to">Контакты</a></li>
             </ul>
           </nav>
 
-          <a href="#" class="btn btn-white" data-bs-toggle="modal" data-bs-target="#callbackModal"><span>Заявка на
+          <div class="address">
+            <p>г. Пенза, ул. Строителей, д. 4</p>
+          </div>
+
+          <a href="tel:+79379111232" class="phone">+7 (937) 911-1232</a>
+
+          <a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#callbackModal"><span>Заявка на
               звонок</span></a>
 
 
@@ -48,8 +54,37 @@
   </header>
 
   <main class="main">
+    <div class="video-wrapper w-100">
+
+      <video autoplay muted loop playsinline poster="img/video-preview.jpg" class="video-box">
+        <source src="img/video-bg.mp4" type="video/mp4">
+      </video>
+    </div>
+
     <div class="container">
-      <div class="row">
+      <div class="row align-items-end">
+        <div class="col-12 order-lg-1">
+          <h1>Академия ремонта ЭУР</h1>
+        </div>
+
+        <div class="col-12 col-lg-8 mb-20">
+          <div class="h1">Профессиональный ремонт электрических рулевых реек <br>за 1 день с гарантией до 12 месяцев
+          </div>
+          <div class="text-big color-gray">
+            <p>Работаем со всей Россией и сопровождаем каждый ремонт фото- и видеоотчетом</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 mb-20">
+          <a href="#" class="btn btn-lg btn-v2 btn-accent btn-price" data-bs-toggle="modal"
+            data-bs-target="#priceModal">
+            <span class="btn-text">Узнать стоимость</span>
+            <span class="btn-icon"><svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
+              </svg></span>
+          </a>
+        </div>
+
 
       </div>
     </div>

@@ -242,6 +242,18 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   transition: 0.3s ease;
 }
 
+.btn-lg {
+  height: 58px;
+  font-size: 16px;
+}
+
+.btn-v2 {
+  padding: 4px;
+}
+.btn-v2 .btn-text {
+  margin: 0 53px 0 28px;
+}
+
 .svg-icon {
   display: inline-block;
   width: 100%;
@@ -251,6 +263,10 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 .btn-accent {
   background: #2F5FF5;
   color: #fff;
+}
+.btn-accent .btn-icon {
+  background: #fff;
+  fill: #2F5FF5;
 }
 .btn-accent:hover {
   background: linear-gradient(276.36deg, #0084FF 6.1%, #2F5FF5 71.48%);
@@ -345,7 +361,16 @@ h1, .h1 {
   width: 100%;
   font-weight: bold;
   font-size: 146px;
+  line-height: 1;
   margin: 0;
+  text-transform: uppercase;
+}
+
+.h1 {
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 110%;
+  text-transform: none;
 }
 
 h2, .h2 {
@@ -354,6 +379,21 @@ h2, .h2 {
   font-weight: 600;
   margin: 0 0 60px;
   width: 100%;
+}
+
+.text-big {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.color-gray {
+  color: rgba(255, 255, 255, 0.5);
+  color: #C7CFDF;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
 }
 
 .slick-slider {
