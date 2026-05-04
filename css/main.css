@@ -38,3 +38,64 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+.advantages-section {
+  position: relative;
+  z-index: 1;
+}
+
+.advantages-image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.advantages-box {
+  margin: 0 0 160px;
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 140%;
+}
+.advantages-box__icon {
+  margin: 0 0 -20px;
+  width: 160px;
+  height: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.advantages-box:last-child {
+  margin: 0;
+}
+
+.advantages-list:last-child .advantages-box {
+  margin-left: auto;
+}
+
+.history-company {
+  border-top: 1px solid #22304D;
+}
+.history-company h2 {
+  margin: 0 0 120px;
+}
