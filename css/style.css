@@ -388,12 +388,15 @@ h2, .h2 {
 }
 
 .color-gray {
-  color: rgba(255, 255, 255, 0.5);
   color: #C7CFDF;
 }
 
 .mb-20 {
   margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
 }
 
 .p-140 {
@@ -402,6 +405,10 @@ h2, .h2 {
 
 .p-200 {
   padding: 200px 0;
+}
+
+.font-500 {
+  font-weight: 500;
 }
 
 .slick-slider {

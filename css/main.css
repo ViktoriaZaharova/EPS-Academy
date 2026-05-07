@@ -93,9 +93,103 @@
   margin-left: auto;
 }
 
-.history-company {
+.about-company {
   border-top: 1px solid #22304D;
 }
-.history-company h2 {
+.about-company h2 {
   margin: 0 0 120px;
+}
+
+.about-date {
+  margin: 0 0 20px;
+  color: #667085;
+  font-size: 20px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about-date:before {
+  content: "";
+  width: 17px;
+  height: 2px;
+  background: #667085;
+  margin-right: 10px;
+}
+
+.about-company-box__title {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1;
+  ffamily: "Exo2", sans-serif;
+  margin: 0 0 20px;
+}
+.about-company-box .box-text {
+  font-size: 20px;
+  color: #98A3BA;
+}
+
+.about-wrapper {
+  position: relative;
+  z-index: 1;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 90px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.about-wrapper:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/about-img.jpg") no-repeat center center/cover;
+  opacity: 0.5;
+  z-index: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.about-card {
+  -webkit-box-flex: 33.333%;
+      -ms-flex: 33.333%;
+          flex: 33.333%;
+  height: 480px;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(11, 19, 36, 0.2);
+  color: #fff;
+}
+.about-card__number {
+  font-size: 160px;
+  font-weight: 700;
+  line-height: 110%;
+  font-family: "Exo2", sans-serif;
+  margin: 0 0 100px;
+  color: transparent;
+  -webkit-text-stroke: 2px #2F5FF5;
+  text-stroke: 2px #2F5FF5;
+}
+.about-card .box-text {
+  margin: auto 0 0;
+  max-width: 534px;
 }
