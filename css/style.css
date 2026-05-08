@@ -350,7 +350,7 @@ ul, ol {
 }
 
 .row {
-  margin: 0 -20px;
+  margin: 0 -10px;
 }
 > .row * {
   padding: 0 10px;
@@ -387,8 +387,25 @@ h2, .h2 {
   line-height: 140%;
 }
 
+.box-text-big {
+  font-size: 20px;
+  line-height: 140%;
+}
+
 .color-gray {
   color: #C7CFDF;
+}
+
+.color-disabled {
+  color: #667085;
+}
+
+.color-gray-2 {
+  color: #98A3BA;
+}
+
+.mt-10 {
+  margin-top: 10px;
 }
 
 .mb-20 {
@@ -397,6 +414,10 @@ h2, .h2 {
 
 .mb-30 {
   margin-bottom: 30px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
 }
 
 .p-140 {

@@ -54,6 +54,11 @@
     font-size: 18px
     font-weight: 600
     line-height: 140%
+    border-left: 1px solid #22304D
+    transition: .3s ease
+    &:hover
+        border-left: 2px solid #2F5FF5
+
     &__icon
         margin: 0 0 -20px
         width: 160px
@@ -102,7 +107,6 @@
     position: relative
     z-index: 1
     border-radius: 20px
-    overflow: hidden
     margin: 90px 0 0
     display: flex
     align-items: stretch
@@ -130,6 +134,10 @@
     border: 1px solid rgba(#fff, .08)
     background: rgba(#0B1324, .2)
     color: #fff
+    transition: .3s ease
+    &:hover
+        background: linear-gradient(0deg, #0B1324, #0B1324), linear-gradient(245.27deg, rgba(0, 132, 255, 0.3) -13.86%, rgba(47, 95, 245, 0) 48.11%)
+        border: 2px solid #2F5FF5
     &__number
         font-size: 160px
         font-weight: 700
@@ -142,3 +150,71 @@
     .box-text
         margin: auto 0 0
         max-width: 534px
+
+
+.problems-section
+    h2
+        max-width: 460px
+    .box-text-big
+        max-width: 770px
+
+.problem-card
+    width: 100%
+    padding: 40px 0
+    border-top: 1px solid #22304D
+    &:last-child
+        border-bottom: 1px solid #22304D
+    &__images
+        height: 500px !important
+        overflow: hidden
+        width: 100%
+        border-radius: 20px
+        box-shadow: 0px 0px 20px 0px #2F5FF566
+        border: 1px solid #2F5FF5
+            
+
+
+.twentytwenty-horizontal .twentytwenty-handle:before, .twentytwenty-horizontal .twentytwenty-handle:after
+    box-shadow: none
+    background: #2F5FF5
+    width: 4px
+    margin-left: -3px
+
+.twentytwenty-handle
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    background: #fff
+    border: none
+    box-shadow: none
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 6px
+    margin-left: -24px
+
+.twentytwenty-horizontal .twentytwenty-handle:before
+    margin-bottom: 26px
+
+.twentytwenty-horizontal .twentytwenty-handle:after
+    margin-top: 26px
+
+.twentytwenty-left-arrow
+    border: none
+    background: url('../img/arrow-left.svg') no-repeat center center
+    width: 14px
+    height: 14px
+    left: 0
+    top: 0
+    margin: 0
+    position: relative
+
+.twentytwenty-right-arrow
+    border: none
+    background: url('../img/arrow-right.svg') no-repeat center center
+    width: 14px
+    height: 14px
+    left: 0
+    top: 0
+    margin: 0
+    position: relative    
