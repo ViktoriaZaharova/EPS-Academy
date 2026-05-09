@@ -78,7 +78,7 @@
     h2
         margin: 0 0 120px
 
-.about-date
+.subtitle-text
     margin: 0 0 20px
     color: #667085
     font-size: 20px
@@ -151,8 +151,8 @@
         margin: auto 0 0
         max-width: 534px
 
-
 .problems-section
+    padding: 0 0 140px
     h2
         max-width: 460px
     .box-text-big
@@ -161,9 +161,33 @@
 .problem-card
     width: 100%
     padding: 40px 0
-    border-top: 1px solid #22304D
-    &:last-child
-        border-bottom: 1px solid #22304D
+    transition: .3s ease
+    position: relative
+    z-index: 1
+    &:before, &:after
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 1px
+        background: #22304D
+        transition: .3s ease
+    &:after
+        top: auto
+        bottom: 0
+    &:hover
+        background: linear-gradient(243.37deg, rgba(0, 132, 255, 0.3) -4.85%, rgba(47, 95, 245, 0) 31.17%)
+        &:before, &:after
+            height: 2px
+            background: linear-gradient(90deg, #88A5FF 0%, #2F5FF5 100%)
+   
+        .problem-card
+            &__link
+                background: #2F5FF5
+                border-color: #2F5FF5
+                svg
+                    fill: #fff
     &__images
         height: 500px !important
         overflow: hidden
@@ -171,8 +195,39 @@
         border-radius: 20px
         box-shadow: 0px 0px 20px 0px #2F5FF566
         border: 1px solid #2F5FF5
-            
-
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__body
+        position: relative
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+        padding: 0 50px 0 0
+        .box-text
+            margin: auto 0 0
+            max-width: 455px
+            width: 100%
+            line-height: 120%
+    &__title
+        max-width: 455px
+    &__link
+        border-radius: 50%
+        border: 1px solid #FFFFFF
+        width: 50px
+        height: 50px
+        top: 0
+        right: 0
+        position: absolute
+        @include d-flex
+        svg
+            width: 14px
+            height: 14px
+            fill: #fff
+            transition: .3s ease
+            transform: rotate(90deg)
 
 .twentytwenty-horizontal .twentytwenty-handle:before, .twentytwenty-horizontal .twentytwenty-handle:after
     box-shadow: none
@@ -217,4 +272,114 @@
     left: 0
     top: 0
     margin: 0
-    position: relative    
+    position: relative
+
+.btn-all-services
+    margin: 60px auto 0
+
+.else-services-wrapper
+    display: flex
+    align-items: stretch
+    flex-wrap: wrap
+    background: rgba(#0B1324, .8)
+
+.else-services-card
+    width: 25%
+    height: 460px
+    padding: 40px
+    border: 1px solid #22304D
+    margin: 0 -0.5px -0.5px 0
+    position: relative
+    z-index: 1
+    transition: .3s ease
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    &:before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        background: linear-gradient(245.27deg, rgba(0, 132, 255, 0.3) -13.86%, rgba(47, 95, 245, 0) 48.11%)
+        z-index: -1
+        opacity: 0
+        transition: .3s ease
+    &::after
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        background: rgba(#0B1324, .3)
+        z-index: -2
+        opacity: 0
+        transition: .3s ease
+    &:hover
+        box-shadow: 0px 0px 20px 0px #2F5FF599
+        border: 2px solid #2F5FF5
+        z-index: 2
+        .else-services-card
+            &__image, &__title
+                opacity: 1
+            &__link
+                background: linear-gradient(275.29deg, #0084FF 2.63%, #2F5FF5 90.81%)
+                border-color: #2F5FF5
+                svg
+                    transform: rotate(45deg)
+        &:before
+            opacity: 1
+        &:after
+            opacity: 1
+
+    &:first-child
+        border-radius: 20px 0 0 0
+    &:nth-child(4)
+        border-radius: 0 20px 0 0
+    &:nth-child(5)
+        border-radius: 0 0 0 20px
+    &:last-child
+        border-radius: 0 0 20px 0
+    &__image
+        width: 100%
+        height: 100%
+        transition: .3s ease
+        object-fit: cover
+        position: absolute
+        left: 0
+        top: 0
+        z-index: -3
+        opacity: 0
+    &__footer
+        margin-top: auto
+        font-size: 18px
+        font-weight: 600
+        line-height: 140%
+    &__title
+        font-size: 16px
+        font-weight: 600
+        line-height: 120%
+        font-family: $title-font
+        text-transform: uppercase
+        opacity: 0
+        margin: 0
+        transition: .3s ease
+    &__head
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__link
+        width: 50px
+        min-width: 50px
+        height: 50px
+        border-radius: 50%
+        border: 1px solid #fff
+        fill: #fff
+        @include d-flex
+        svg
+            width: 12px
+            height: 12px
+            transition: .3s ease
