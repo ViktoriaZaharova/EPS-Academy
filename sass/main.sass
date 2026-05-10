@@ -181,7 +181,7 @@
         &:before, &:after
             height: 2px
             background: linear-gradient(90deg, #88A5FF 0%, #2F5FF5 100%)
-   
+
         .problem-card
             &__link
                 background: #2F5FF5
@@ -383,3 +383,221 @@
             width: 12px
             height: 12px
             transition: .3s ease
+
+.stages-work
+    &__content
+        width: 100%
+        display: flex
+        flex-direction: column
+        padding: 120px 0
+        height: 100%
+    h2
+        max-width: 680px
+
+.stages-work-card
+    width: 100%
+    padding: 250px 40px
+    position: relative
+    z-index: 1
+    &::before
+        content: ''
+        position: absolute
+        z-index: -1
+        background: rgba(#0B1324, .2)
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+    &__image
+        position: absolute
+        z-index: -2
+        width: 100%
+        height: 100%
+        object-fit: cover
+        top: 0
+        left: 0
+        opacity: 0.6
+    &__content
+        margin: auto
+        width: 100%
+        max-width: 480px
+        height: 480px
+        border-radius: 20px
+        padding: 40px
+        border: 1px solid #2F5FF5
+        display: flex
+        flex-direction: column
+        background: rgba(#0B1324, .7)
+        transition: .3s ease
+        position: relative
+        z-index: 1
+        &::before
+            content: ''
+            position: absolute
+            left: 0
+            top: 0
+            opacity: 0
+            width: 100%
+            height: 100%
+            border-radius: 20px
+            transition: .3s ease
+            z-index: -1
+            background: linear-gradient(245.27deg, rgba(0, 132, 255, 0.3) -13.86%, rgba(47, 95, 245, 0) 48.11%)
+    &__number
+        margin: 0 0 auto
+        color: transparent
+        -webkit-text-stroke: 2px #2F5FF5
+        font-size: 160px
+        font-family: $title-font
+        font-weight: bold
+        line-height: 110%
+    &:hover
+        .stages-work-card
+            &__content
+                box-shadow: 0px 0px 20px 0px #2F5FF599
+                background: linear-gradient(0deg, #0B1324, #0B1324)
+                &::before
+                    opacity: 1
+
+.steps-works-wrapper
+    width: 100%
+    display: flex
+    align-items: stretch
+    position: relative
+    z-index: 2
+    border-radius: 20px
+    overflow: hidden
+    &::before
+        content: ''
+        position: absolute
+        z-index: -1
+        width: 100%
+        height: 100%
+        background: url('../img/steps-bg.png') no-repeat center
+        background-size: cover
+        opacity: 0.8
+
+.steps-work-card
+    flex: 1
+    height: 687px
+    background: rgba(#0B1324, .2)
+    border: 1px solid rgba(#fff, .08)
+    padding: 40px
+    position: relative
+    z-index: 1
+    overflow: hidden
+    transition: .3s ease
+    display: flex
+    flex-direction: column
+    &::before
+        content: ''
+        position: absolute
+        z-index: -1
+        width: 100%
+        height: 100%
+        left: 0
+        top: 0
+        background: linear-gradient(245.27deg, rgba(0, 132, 255, 0.3) -13.86%, rgba(47, 95, 245, 0) 48.11%)
+        opacity: 0
+        transition: .3s ease
+    &:first-child
+        border-radius: 20px 0 0 20px
+    &:last-child
+        border-radius: 0 20px 20px 0
+    &__head
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+    h4
+        margin: 0
+    .box-text
+        color: #98A3BA
+        font-size: 18px
+        font-weight: 600
+        line-height: 140%
+        margin: 40px 0 0
+    &__body
+        width: 100%
+        position: relative
+        z-index: 1
+        .box-text
+            transition: 3s ease
+            display: none
+    &__number
+        color: transparent
+        -webkit-text-stroke: 2px #2F5FF5
+        font-size: 80px
+        font-family: $title-font
+        font-weight: bold
+        line-height: 110%
+    &:hover
+        background: linear-gradient(0deg, #0B1324, #0B1324)
+        border: 2px solid #2F5FF5
+        &::before
+            opacity: 1
+        .steps-work-card
+
+            &__body
+                .box-text
+                    display: block
+
+.partners-section
+    padding: 200px 0 0
+
+.partners-slider
+    .slick-track
+        display: flex
+    .slide
+        height: 100%
+    .slick-slide
+        height: inherit
+
+    .first-visible .partners-box
+        border-left: 1px solid #22304D
+        border-top-left-radius: 24px
+
+    .last-visible .partners-box
+        border-top-right-radius: 24px
+
+.partners-box
+    height: 100%
+    height: 360px
+    border-top: 1px solid #22304D
+    border-bottom: 1px solid #22304D
+    border-right: 1px solid #22304D
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 40px
+    transition: .3s ease
+    border-radius: 0
+    position: relative
+    z-index: 1
+    &::before
+        content: ""
+        position: absolute
+        z-index: -1
+        width: 100%
+        height: 100%
+        left: 0
+        top: 0
+        background: linear-gradient(245.27deg, rgba(0, 132, 255, 0.3) -13.86%, rgba(47, 95, 245, 0) 48.11%)
+        opacity: 0
+        -webkit-transition: 0.3s ease
+        transition: 0.3s ease
+
+    img
+        max-width: 290px
+        height: auto
+        filter: grayscale(1)
+    &:hover
+        border: 2px solid #2C67FA
+        background: linear-gradient(0deg, #101A31, #101A31)
+        &::before
+            opacity: 1
+
+
+
+
+            

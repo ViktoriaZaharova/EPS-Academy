@@ -11,3 +11,43 @@ $(".twentytwenty-box").twentytwenty({
     click_to_move: false // Allow a user to click (or tap) anywhere on the image to move the slider to that location.
 });
 
+$('.partners-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: false,
+    infinite: false,
+    autoplay: true,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+    ]
+});
+
+function updatePartnersBorders() {
+    $('.partners-slider .slide')
+        .removeClass('first-visible last-visible');
+
+    $('.partners-slider .slick-active')
+        .first()
+        .addClass('first-visible');
+
+    $('.partners-slider .slick-active')
+        .last()
+        .addClass('last-visible');
+}
+
+$('.partners-slider').on('init afterChange', function () {
+    updatePartnersBorders();
+});
+
+updatePartnersBorders();
