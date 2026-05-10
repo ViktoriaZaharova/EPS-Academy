@@ -732,3 +732,82 @@
 .certificates-section
     border-top: 1px solid #22304D
     border-bottom: 1px solid #22304D
+    position: relative
+    overflow: hidden
+
+.certificates-slider
+    overflow: hidden
+
+    .certificates-slider
+    .slick-list
+        overflow: visible
+        padding: 40px 0
+
+    .slick-track
+        display: flex
+        align-items: start
+
+    .slide
+        transition: .35s ease
+        transform: scale(.82)
+        opacity: .5
+
+    .slick-active
+        transform: scale(.9)
+        opacity: .8
+
+    .slick-current
+        transform: scale(1)
+        opacity: 1
+        z-index: 5
+
+        .certificates-item img
+            box-shadow: 0 0 40px rgba(#0084FF, .75)
+
+    .certificates-item
+        transition: .35s ease
+
+        img
+            transition: .35s ease
+
+.certificates-bottom
+    margin-top: 24px
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    gap: 16px
+
+.certificates-counter
+    font-size: 32px
+    line-height: 1
+    color: #fff
+    font-weight: 500
+
+.certificates-arrows
+    display: flex
+    align-items: center
+    gap: 12px
+
+.certificates-arrow
+    width: 56px
+    height: 56px
+    min-width: 56px
+    border-radius: 50%
+    border: 1px solid rgba(#fff, .4)
+    background: transparent
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    transition: .3s ease
+    color: #fff
+
+    &:hover
+        background: #0084FF
+        border-color: #0084FF
+
+    .svg-icon
+        width: 18px
+        height: 18px
+        fill: none
+        stroke: currentColor

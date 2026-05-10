@@ -993,4 +993,115 @@
 .certificates-section {
   border-top: 1px solid #22304D;
   border-bottom: 1px solid #22304D;
+  position: relative;
+  overflow: hidden;
+}
+
+.certificates-slider {
+  overflow: hidden;
+}
+.certificates-slider .slick-list {
+  overflow: visible;
+  padding: 40px 0;
+}
+.certificates-slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.certificates-slider .slide {
+  -webkit-transition: 0.35s ease;
+  transition: 0.35s ease;
+  -webkit-transform: scale(0.82);
+          transform: scale(0.82);
+  opacity: 0.5;
+}
+.certificates-slider .slick-active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  opacity: 0.8;
+}
+.certificates-slider .slick-current {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+  z-index: 5;
+}
+.certificates-slider .slick-current .certificates-item img {
+  -webkit-box-shadow: 0 0 40px rgba(0, 132, 255, 0.75);
+          box-shadow: 0 0 40px rgba(0, 132, 255, 0.75);
+}
+.certificates-slider .certificates-item {
+  -webkit-transition: 0.35s ease;
+  transition: 0.35s ease;
+}
+.certificates-slider .certificates-item img {
+  -webkit-transition: 0.35s ease;
+  transition: 0.35s ease;
+}
+
+.certificates-bottom {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 16px;
+}
+
+.certificates-counter {
+  font-size: 32px;
+  line-height: 1;
+  color: #fff;
+  font-weight: 500;
+}
+
+.certificates-arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+
+.certificates-arrow {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  color: #fff;
+}
+.certificates-arrow:hover {
+  background: #0084FF;
+  border-color: #0084FF;
+}
+.certificates-arrow .svg-icon {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
 }

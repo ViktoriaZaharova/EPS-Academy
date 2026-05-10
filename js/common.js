@@ -51,3 +51,53 @@ $('.partners-slider').on('init afterChange', function () {
 });
 
 updatePartnersBorders();
+
+
+Fancybox.bind("[data-fancybox]", {});
+
+$('.certificates-slider').on('init reInit afterChange', function (event, slick, currentSlide) {
+
+    let i = (currentSlide ? currentSlide : 0) + 1;
+
+    $('.certificates-counter .current').text(
+        (i < 10 ? '0' : '') + i
+    );
+
+    $('.certificates-counter .total').text(
+        (slick.slideCount < 10 ? '0' : '') + slick.slideCount
+    );
+
+});
+
+$('.certificates-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    infinite: true,
+    arrows: true,
+    dots: false,
+    centerMode: false,
+
+    prevArrow: $('.certificates-prev'),
+    nextArrow: $('.certificates-next'),
+
+    responsive: [
+        {
+            breakpoint: 1400,
+            settings: {
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+    ]
+});
