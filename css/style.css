@@ -515,6 +515,15 @@ h4, .h4 {
   line-height: 100%;
 }
 
+h5, .h5 {
+  width: 100%;
+  font-family: "Exo2", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 0 20px;
+  line-height: 100%;
+}
+
 .text-big {
   font-size: 20px;
   font-weight: 600;
