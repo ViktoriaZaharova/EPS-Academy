@@ -2,7 +2,7 @@
 
 header
     position: absolute
-    z-index: 3
+    z-index: 10
     width: 100%
     left: 0
     top: 0
@@ -20,6 +20,8 @@ header
         margin: 0 40px 0 0
     .address
         margin: 0 40px 0 0
+    &.open-menu
+        background: #101A31
 
 .logo
     max-width: 110px
@@ -38,6 +40,8 @@ header
 
 .nav-menu
     margin: 0 auto 0 100px
+    .address, .btn-callback-header
+        display: none
 
 .menu
     display: flex
@@ -69,3 +73,23 @@ header
 
             &::after
                 width: 100%
+
+.btn-burger
+    width: 63px
+    min-width: 63px
+    height: 60px
+    background: url('../img/burger-icon.svg') no-repeat center
+    background-size: 40px
+    &.click
+        background: url('../img/close-icon.svg') no-repeat center
+        background-size: 40px
+
+.overlay-menu
+    display: none
+    z-index: 3
+    width: 100%
+    height: 100%
+    background: rgba(#0B1324, .5)
+    left: 0
+    top: 0
+    position: absolute

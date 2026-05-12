@@ -1,16 +1,147 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1350px)
+    .nav-menu
+        margin: 0 auto 0 30px
+
+    .container
+        padding: 0 24px
+
+    header::before
+        width: calc( 100% - 48px )
+
+    header .phone, header .address
+        margin: 0 20px 0 0
+
 @media only screen and (max-width: 1200px)
+    header::before
+        width: 100%
+
+    .nav-menu
+        display: none
+        position: absolute
+        right: 0
+        top: 100%
+        margin: 0
+        background: #101A31
+        border-radius: 0 0 0 20px
+        padding: 60px 40px
+        .address, .btn-callback-header
+            display: flex
+        .address
+            margin: 93px 0 40px
+            padding: 0 20px
+
+    .menu
+        flex-direction: column
+        align-items: flex-start
+        padding: 0 20px
+        font-size: 16px
+        li
+            margin: 0 0 20px
+            &:last-child
+                margin: 0
+
+    header
+        padding: 0
+        &::before
+            background: #22304D
+        .logo
+            margin: 0 auto 0 0
+        .address, .btn-callback-header
+            display: none
+
+    .btn-burger
+        display: flex
+
+    .phone
+        font-size: 16px
+
+    h1, .h1
+        font-size: 80px
+
+    .h1
+        font-size: 40px
+
+    h2, .h2
+        font-size: 34px
+        margin: 0 0 40px
+
+    .p-200
+        padding: 140px 0
+
+    .p-140
+        padding: 100px 0
 
 @media only screen and (max-width: 992px)
+    .main
+        padding: 80px 0 40px
+        .btn-price
+            margin: 20px 0 0
+        .h1
+            margin: 0 0 20px
+        .text-big
+            max-width: none
+            margin: 0
+        &:after
+            height: 220px
+            background: linear-gradient(180deg, rgba(11, 19, 36, 0) 0%, #0B1324 100%)
+
+    h1
+        margin: 0 0 172px
+        font-size: 70px
+
+    .h1
+        font-size: 34px
+        margin: 0 0 20px
+        br
+            display: none
+
+    h2, .h2
+        font-size: 28px
+        line-height: 100%
+
+    .subtitle-text
+        font-size: 16px
+        margin: 0 0 10px
+        
+    .text-big
+        font-size: 18px
+
+    .p-200, .p-140
+        padding: 60px 0
+
+    .advantages-image
+        top: 45%
+
+    .advantages-list
+        display: flex
+        align-items: stretch
+        margin-bottom: 230px
+        &:last-child
+            margin-bottom: 0
+
+    .advantages-box
+        margin: 0
+        width: 50%
+        max-width: none
 
 @media only screen and (max-width: 768px)
+    .advantages-box
+        font-size: 15px
+        line-height: 120%
+        &__icon
+            width: 100px
+            height: 100px
+            margin: 0 0 -10px
 
 @media only screen and (max-width: 576px)
+    h1
+        font-size: 54px
 
 @media only screen and (max-width: 480px)
 
 @media only screen and (max-width: 420px)
 
-@media only screen and (max-width: 370px)	
+@media only screen and (max-width: 370px)
