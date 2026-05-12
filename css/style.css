@@ -464,6 +464,38 @@ h4, .h4 {
   outline: none;
 }
 
+.slick-arrow {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  color: #fff;
+  opacity: 1;
+}
+.slick-arrow:hover {
+  background: linear-gradient(275.29deg, #0084FF 2.63%, #2F5FF5 90.81%);
+  border-color: transparent;
+}
+.slick-arrow .svg-icon {
+  width: 14px;
+  height: 14px;
+  fill: #fff;
+}
+
 .label-checkbox {
   position: relative;
   display: -webkit-box;

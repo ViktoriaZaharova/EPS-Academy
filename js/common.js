@@ -76,7 +76,6 @@ $('.certificates-slider').slick({
     arrows: true,
     dots: false,
     centerMode: false,
-
     prevArrow: $('.certificates-prev'),
     nextArrow: $('.certificates-next'),
 
