@@ -2,9 +2,6 @@ $('[name="phone"]').mask('+7 (999) 999-99-99');
 
 $(".twentytwenty-box").twentytwenty({
     default_offset_pct: 0.5, // How much of the before image is visible when the page loads
-    // orientation: 'vertical', // Orientation of the before and after images ('horizontal' or 'vertical')
-    // before_label: 'January 2017', // Set a custom before label
-    // after_label: 'March 2017', // Set a custom after label
     no_overlay: true, //Do not show the overlay with before and after
     move_slider_on_hover: false, // Move slider on mouse hover?
     move_with_handle_only: false, // Allow a user to swipe anywhere on the image to control slider movement. 
@@ -86,6 +83,62 @@ $('.certificates-slider').slick({
                 slidesToShow: 3
             }
         },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+    ]
+});
+
+$('.works-slider').on('init', function () {
+
+    $('.twentytwenty-container').twentytwenty({
+        default_offset_pct: 0.5, // How much of the before image is visible when the page loads
+    no_overlay: true, //Do not show the overlay with before and after
+    move_slider_on_hover: false, // Move slider on mouse hover?
+    move_with_handle_only: false, // Allow a user to swipe anywhere on the image to control slider movement. 
+    click_to_move: false // Allow a user to click (or tap) anywhere on the image to move the slider to that location.
+    });
+
+});
+
+$('.works-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: false,
+    dots: false,
+
+    draggable: false,
+    swipe: false,
+    touchMove: false,
+
+    prevArrow: `
+        <button class="slick-arrow slick-prev">
+            <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#arrow-left"></use>
+            </svg>
+        </button>
+    `,
+
+    nextArrow: `
+        <button class="slick-arrow slick-next">
+            <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg>
+        </button>
+    `,
+
+    appendArrows: $('.works-slider-arrows'),
+
+    responsive: [
         {
             breakpoint: 992,
             settings: {

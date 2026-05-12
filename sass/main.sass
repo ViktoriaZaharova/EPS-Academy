@@ -814,7 +814,7 @@
     gap: 10px
 
 .stends
-    padding: 120px 0
+    padding: 110px 0
 
 .stend-card
     width: 100%
@@ -926,5 +926,127 @@
         position: relative
         z-index: 2
         color: #fff
-    h4
+    &__title
         margin: 0
+
+.technical-equimpent
+    padding: 120px 0 0        
+
+
+.technical-equimpent-card
+    width: 100%
+    height: 800px
+    position: relative
+    z-index: 2
+    padding: 40px
+    border-radius: 20px
+    display: flex
+    align-items: flex-end
+    justify-content: flex-end
+    &__img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        border-radius: 20px
+        position: absolute
+        left: 0
+        top: 0
+    &:before, &:after
+        content: ''
+        position: absolute
+        left: 0
+        width: 100%
+    &::before
+        top: 0
+        height: 100%
+        // background: rgba() 
+    &:after
+        height: 268px
+        bottom: 0
+        background: linear-gradient(360deg, #0B1324 0%, rgba(16, 26, 49, 0) 100%)
+    &__body
+        width: 100%
+        position: relative
+        z-index: 2
+
+.works-section
+    border-top: 1px solid #22304D
+    padding: 140px 0 0
+
+.works-slider-arrows
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    margin: 0 0 60px
+    .slick-next
+        margin-left: 10px
+    
+.works-slider
+    .slick-list
+        margin: 0 -10px
+    .slide
+        padding: 0 10px
+    
+
+.text-info
+    padding: 20px
+    border-left: 2px solid #2F5FF5
+    background: #101A31
+    color: #fff !important
+    margin: auto 0 0
+    font-size: 20px
+    font-weight: 600
+    line-height: 140%
+
+.callback-section
+    position: relative
+    z-index: 1
+    padding: 0 0 140px
+    overflow: hidden
+    &:before
+        content: ''
+        position: absolute
+        z-index: -1
+        left: 50%
+        top: -200px
+        transform: translate(-50%,0)
+        background: url('../img/callback-bg.png') no-repeat center
+        background-size: 100%
+        width: 1400px
+        height: 1400px
+    h2
+        margin: 0 0 40px
+    .text-big
+        color: #98A3BA
+        font-weight: 500
+        max-width: 610px
+        margin: 0 0 20px
+
+.callback-content
+    display: flex
+    flex-direction: column
+    height: 100%
+    width: 100%
+    max-width: 665px
+
+
+.callback-wrapper
+    max-width: 600px
+    width: 100%
+    margin: 0 0 0 auto
+    border: 2px solid $accent
+    border-radius: 20px
+    background: #101A31
+    box-shadow: 0px 0px 20px 0px #2F5FF599
+    padding: 50px 60px
+
+.consent
+    margin: 20px 0 0
+    color: #667085
+    line-height: 120%
+
+.form-callback
+    [type='submit']
+        margin: 40px 0 0    
+
+

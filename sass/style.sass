@@ -68,22 +68,41 @@ input, textarea, select
   outline: none
   box-shadow: none
   appearance: none
-  padding: 0 15px
+  padding: 0 0 20px
   box-sizing: border-box
   font-family: $default-font
   border: none
-  border-radius: 10px
+  border-bottom: 1px solid #22304D
   width: 100%
-  height: 54px
+  height: 45px
   background: transparent
-  color: #000
-  font-size: 15px
+  color: #fff
+  font-size: 18px
+  font-weight: 600
+  line-height: 140%
   cursor: pointer
+  transition: .3s ease
   &::placeholder
-    color: #595959
-
+    color: #8A9099
   &:hover, &:focus
     outline: none
+  &:hover
+    background: transparent
+    color: #fff
+    box-shadow: 0 10px 20px -10px rgba(#2F5FF5, .6)
+    border-bottom: 2px solid $accent
+    &::placeholder
+      color: #fff
+  &:focus
+    background: transparent
+    box-shadow: 0 10px 20px -10px rgba(#2F5FF5, .6)
+    border-bottom: 2px solid $accent
+    color: #fff
+    &::placeholder
+      color: #fff
+  &:not(:placeholder-shown)
+    color: #fff
+    border-bottom: 1px solid #22304D
     box-shadow: none
 
 input[type="radio"], input[type="checkbox"]
@@ -96,15 +115,48 @@ input[type="radio"], input[type="checkbox"]
 label
   display: block
   width: 100%
-  margin: 0 0 13px
-
+  margin: 0 0 30px
   &:last-child
     margin: 0
 
 textarea
   resize: none
-  padding: 12px 17px
-  height: 103px
+  padding: 0 0 20px
+  height: 145px
+
+.label-file
+  position: relative
+  z-index: 1
+  display: flex
+  align-items: center
+  border-bottom: 1px solid #22304D
+  transition: .3s ease
+  color: #98A3BA
+  padding: 0 0 20px
+  font-size: 18px
+  font-weight: 600
+  line-height: 140%
+  cursor: pointer
+  &:hover
+    box-shadow: 0 10px 20px -10px rgba(#2F5FF5, .6)
+    border-bottom: 2px solid $accent
+    color: #fff
+    .label-file
+      &__icon
+        stroke: #fff
+
+  input
+    display: none
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    fill: none
+    stroke: #98A3BA
+    width: 40px
+    height: 40px
+    min-width: 40px
+    margin: 0 20px 0 0
 
 button, .btn
   outline: none
@@ -142,7 +194,9 @@ button, .btn
 .btn-v2
   padding: 4px
   .btn-text
-    margin: 0 53px 0 28px
+    margin: 0 auto 0 28px
+  .btn-icon
+    margin-left: 53px
 
 .svg-icon
   display: inline-block
@@ -224,6 +278,7 @@ h1, .h1
   line-height: 1
   margin: 0
   text-transform: uppercase
+  line-height: 100%
 
 .h1
   font-size: 56px
@@ -237,6 +292,7 @@ h2, .h2
   font-weight: 600
   margin: 0 0 60px
   width: 100%
+  line-height: 100%
 
 h3, .h3
   width: 100%
@@ -244,6 +300,7 @@ h3, .h3
   font-size: 36px
   font-weight: 500
   margin: 0 0 30px
+  line-height: 100%
 
 h4, .h4
   width: 100%
@@ -251,6 +308,7 @@ h4, .h4
   font-size: 24px
   font-weight: 500
   margin: 0 0 20px
+  line-height: 100%
 
 .text-big
   font-size: 20px
@@ -275,6 +333,9 @@ h4, .h4
 
 .mt-10
   margin-top: 10px
+
+.mb-10
+  margin-bottom: 10px
 
 .mb-20
   margin-bottom: 20px
