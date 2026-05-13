@@ -573,13 +573,13 @@
             <div class="subtitle-text">Как мы работаем</div>
             <h2>От заявки на ремонт <br>до отправки исправной <br>рейки — все под контролем</h2>
 
-            <a href="#" class="btn btn-accent mt-auto" data-bs-toggle="modal"
+            <a href="#" class="btn btn-accent mt-auto d-none d-lg-flex" data-bs-toggle="modal"
               data-bs-target="#callbackModal"><span>Оставить
                 заявку</span></a>
           </div>
         </div>
         <div class="col-12 col-lg-6">
-          <div class="stages-work-card">
+          <div class="stages-work-card stages-work-card-first">
             <img src="img/stage1.png" alt="" class="stages-work-card__image">
             <div class="stages-work-card__content">
               <div class="stages-work-card__number">01</div>
@@ -623,7 +623,7 @@
           </div>
         </div>
         <div class="col-12 col-lg-6 offset-lg-6">
-          <div class="stages-work-card">
+          <div class="stages-work-card stages-work-card-last">
             <img src="img/stage5.png" alt="" class="stages-work-card__image">
             <div class="stages-work-card__content">
               <div class="stages-work-card__number">05</div>
@@ -632,6 +632,11 @@
               </div>
             </div>
           </div>
+        </div>
+
+        <div class="col-12 d-block d-lg-none mt-40">
+          <a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#callbackModal"><span>Оставить
+              заявку</span></a>
         </div>
       </div>
     </div>
@@ -772,7 +777,7 @@
         <div class="col-12 col-lg-6">
           <h2>Наглядно о результатах <br>нашей работы</h2>
         </div>
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-6 d-none d-lg-block">
           <div class="works-slider-arrows"></div>
         </div>
       </div>

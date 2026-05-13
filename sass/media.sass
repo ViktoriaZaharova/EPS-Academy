@@ -83,6 +83,10 @@
     .btn-all-services
         margin: 40px auto 0
 
+    .steps-work-card__number
+        font-size: 60px
+
+
 @media only screen and (max-width: 992px)
     .main
         padding: 80px 0 40px
@@ -123,6 +127,23 @@
 
     .mb-140
         margin-bottom: 60px
+
+    input, textarea, select
+        font-size: 16px
+
+    input, select
+        height: 39px
+
+    textarea
+        height: 100px
+
+    label
+        margin: 0 0 20px
+        &:last-child
+            margin: 0
+
+    .form-callback [type=submit]
+        margin: 20px 0 0
 
     .subtitle-text
         font-size: 16px
@@ -201,7 +222,72 @@
             border-radius: 0
         &:nth-child(7)
             border-radius: 0 0 0 20px
-            
+
+    .stages-work
+        padding: 60px 0
+        border-top: 1px solid #22304D
+        &__content
+            padding: 0
+            margin: 0 0 40px
+        h2
+            margin: 0
+            max-width: none
+            br
+                display: none
+
+    .stages-work-card
+        padding: 150px 30px
+
+    .stages-work-card__number
+        font-size: 100px
+
+    .callback-section:before
+        width: 290px
+        height: 290px
+        top: 0
+        left: auto
+        right: 0
+        transform: none
+
+    .callback-content
+        max-width: none
+
+    .callback-wrapper
+        margin: 20px 0 0
+        max-width: none
+        padding: 40px
+
+    .callback-section
+        padding: 0 0 60px
+
+    .callback-section .text-big
+        max-width: none
+
+    .text-info
+        font-size: 16px
+
+    .steps-works-wrapper
+        flex-wrap: wrap
+
+    .steps-work-card
+        flex: 100%
+        height: auto
+        padding: 20px
+        display: flex
+        align-items: center
+        flex-direction: row
+        &__head
+            width: fit-content
+            height: auto
+            min-width: 100px
+        &__number
+            font-size: 40px
+
+    .works-section
+        padding: 60px 0 0
+
+    .works-slider-arrows
+        
 
 @media only screen and (max-width: 768px)
     .advantages-box
@@ -232,7 +318,44 @@
             font-size: 16px
             line-height: 130%
 
-    
+    .stages-work-card
+        padding: 0
+        border: 1px solid #2F5FF5
+        box-shadow: 0px 0px 20px 0px rgba(#2F5FF5, .4)
+        &__image
+            opacity: 0.4
+        &::before
+            display: none
+        &__number
+            margin: 0 0 60px
+            font-size: 50px
+        .text-big
+            font-size: 16px
+
+    .stages-work-card-first
+        border-radius: 20px 20px 0 0
+        .stages-work-card__content, .stages-work-card__image
+            border-radius: 20px 20px 0 0
+            &::before
+                border-radius: 20px 20px 0 0
+                
+
+    .stages-work-card-last
+        border-radius: 0 0 20px 20px
+        .stages-work-card__content, .stages-work-card__image
+            border-radius: 0 0 20px 20px
+            &::before
+                border-radius: 0 0 20px 20px
+                
+
+    .stages-work-card__content
+        max-width: none
+        width: 100%
+        height: 100%
+        border: none
+        border-radius: 0
+        padding: 20px
+
 @media only screen and (max-width: 576px)
     h1
         font-size: 54px
@@ -247,6 +370,9 @@
         flex-direction: row
         align-items: center
         padding: 20px
+        border-color: #2F5FF5
+        box-shadow: 0px 0px 20px 0px rgba(#2F5FF5, .4)
+
         &__footer
             order: -1
             width: 100%
@@ -264,7 +390,6 @@
             border-radius: 0
         &:last-child
             border-radius: 0 0 20px 20px
-            
 
 @media only screen and (max-width: 480px)
 
