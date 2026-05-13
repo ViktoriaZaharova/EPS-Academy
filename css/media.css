@@ -90,6 +90,15 @@
   .p-140 {
     padding: 100px 0;
   }
+  .about-company h2 {
+    margin: 0 0 70px;
+  }
+  .problems-section {
+    padding: 0 0 60px;
+  }
+  .btn-all-services {
+    margin: 40px auto 0;
+  }
 }
 @media only screen and (max-width: 992px) {
   .main {
@@ -125,9 +134,25 @@
     font-size: 28px;
     line-height: 100%;
   }
+  h3, .h3 {
+    font-size: 22px;
+    margin: 0 0 20px;
+  }
+  h4, .h4 {
+    font-size: 20px;
+  }
+  .mb-60 {
+    margin-bottom: 40px;
+  }
+  .mb-140 {
+    margin-bottom: 60px;
+  }
   .subtitle-text {
     font-size: 16px;
     margin: 0 0 10px;
+  }
+  .subtitle-text::before {
+    margin: 10px 10px 0 0;
   }
   .text-big {
     font-size: 18px;
@@ -155,6 +180,59 @@
     width: 50%;
     max-width: none;
   }
+  .about-wrapper {
+    margin: 0;
+  }
+  .about-company h2 {
+    margin: 0 0 30px;
+  }
+  .about-company-box__title {
+    font-size: 44px;
+    line-height: 1;
+    margin: 0 0 10px;
+  }
+  .about-company-box .box-text {
+    font-size: 16px;
+  }
+  .about-card__number {
+    font-size: 120px;
+  }
+  .problem-card {
+    padding: 20px 0;
+  }
+  .problem-card__body {
+    padding: 20px 50px 0 0;
+  }
+  .problem-card__title {
+    max-width: none;
+    margin: 0 0 20px;
+  }
+  .problem-card__body .box-text {
+    max-width: none;
+    font-size: 14px;
+    line-height: 120%;
+  }
+  .problem-card__price {
+    margin: 0 0 40px;
+  }
+  .problem-card__link {
+    top: 20px;
+  }
+  .problem-card__images {
+    height: 432px !important;
+  }
+  .else-services-card {
+    width: 50%;
+  }
+  .else-services-card:nth-child(2) {
+    border-radius: 0 20px 0 0;
+  }
+  .else-services-card:nth-child(4), .else-services-card:nth-child(5) {
+    border-radius: 0;
+  }
+  .else-services-card:nth-child(7) {
+    border-radius: 0 0 0 20px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .advantages-box {
@@ -166,9 +244,99 @@
     height: 100px;
     margin: 0 0 -10px;
   }
+  .about-card {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    height: auto;
+    padding: 20px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .about-card:first-child {
+    border-radius: 20px 20px 0 0;
+  }
+  .about-card:last-child {
+    border-radius: 0 0 20px 20px;
+  }
+  .about-card__number {
+    font-size: 50px;
+    margin: 0 20px 0 0;
+  }
+  .about-card .box-text {
+    max-width: none;
+    margin: 0;
+    font-size: 16px;
+    line-height: 130%;
+  }
 }
 @media only screen and (max-width: 576px) {
   h1 {
     font-size: 54px;
+  }
+  .advantages-image {
+    width: 100%;
+    top: 43%;
+  }
+  .else-services-card {
+    width: 100%;
+    height: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
+  }
+  .else-services-card__footer {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    width: 100%;
+    margin: 0;
+  }
+  .else-services-card__footer br {
+    display: none;
+  }
+  .else-services-card__title {
+    display: none;
+  }
+  .else-services-card__head {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+  }
+  .else-services-card:first-child {
+    border-radius: 20px 20px 0 0;
+  }
+  .else-services-card:nth-child(2), .else-services-card:nth-child(7) {
+    border-radius: 0;
+  }
+  .else-services-card:last-child {
+    border-radius: 0 0 20px 20px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .about-company-box__title {
+    font-size: 30px;
+  }
+  .advantages-list {
+    margin-bottom: 180px;
+  }
+  .advantages-list:last-child {
+    margin: 0;
+  }
+  .advantages-image {
+    top: 50%;
   }
 }

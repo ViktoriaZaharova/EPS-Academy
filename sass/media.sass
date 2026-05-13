@@ -74,6 +74,15 @@
     .p-140
         padding: 100px 0
 
+    .about-company h2
+        margin: 0 0 70px
+
+    .problems-section
+        padding: 0 0 60px
+
+    .btn-all-services
+        margin: 40px auto 0
+
 @media only screen and (max-width: 992px)
     .main
         padding: 80px 0 40px
@@ -102,10 +111,25 @@
         font-size: 28px
         line-height: 100%
 
+    h3, .h3
+        font-size: 22px
+        margin: 0 0 20px
+
+    h4, .h4
+        font-size: 20px
+
+    .mb-60
+        margin-bottom: 40px
+
+    .mb-140
+        margin-bottom: 60px
+
     .subtitle-text
         font-size: 16px
         margin: 0 0 10px
-        
+        &::before
+            margin: 10px 10px 0 0
+
     .text-big
         font-size: 18px
 
@@ -127,6 +151,58 @@
         width: 50%
         max-width: none
 
+    .about-wrapper
+        margin: 0
+
+    .about-company h2
+        margin: 0 0 30px
+
+    .about-company-box__title
+        font-size: 44px
+        line-height: 1
+        margin: 0 0 10px
+
+    .about-company-box .box-text
+        font-size: 16px
+
+    .about-card__number
+        font-size: 120px
+
+    .problem-card
+        padding: 20px 0
+
+    .problem-card__body
+        padding: 20px 50px 0 0
+
+    .problem-card__title
+        max-width: none
+        margin: 0 0 20px
+
+    .problem-card__body
+        .box-text
+            max-width: none
+            font-size: 14px
+            line-height: 120%
+
+    .problem-card__price
+        margin: 0 0 40px
+
+    .problem-card__link
+        top: 20px
+
+    .problem-card__images
+        height: 432px !important
+
+    .else-services-card
+        width: 50%
+        &:nth-child(2)
+            border-radius: 0 20px 0 0
+        &:nth-child(4), &:nth-child(5)
+            border-radius: 0
+        &:nth-child(7)
+            border-radius: 0 0 0 20px
+            
+
 @media only screen and (max-width: 768px)
     .advantages-box
         font-size: 15px
@@ -136,12 +212,72 @@
             height: 100px
             margin: 0 0 -10px
 
+    .about-card
+        flex: 100%
+        height: auto
+        padding: 20px
+        flex-direction: row
+        align-items: center
+        flex-wrap: nowrap
+        &:first-child
+            border-radius: 20px 20px 0 0
+        &:last-child
+            border-radius: 0 0 20px 20px
+        &__number
+            font-size: 50px
+            margin: 0 20px 0 0
+        .box-text
+            max-width: none
+            margin: 0
+            font-size: 16px
+            line-height: 130%
+
+    
 @media only screen and (max-width: 576px)
     h1
         font-size: 54px
+
+    .advantages-image
+        width: 100%
+        top: 43%
+
+    .else-services-card
+        width: 100%
+        height: auto
+        flex-direction: row
+        align-items: center
+        padding: 20px
+        &__footer
+            order: -1
+            width: 100%
+            margin: 0
+            br
+                display: none
+        &__title
+            display: none
+        &__head
+            width: fit-content
+            margin-left: auto
+        &:first-child
+            border-radius: 20px 20px 0 0
+        &:nth-child(2), &:nth-child(7)
+            border-radius: 0
+        &:last-child
+            border-radius: 0 0 20px 20px
+            
 
 @media only screen and (max-width: 480px)
 
 @media only screen and (max-width: 420px)
 
 @media only screen and (max-width: 370px)
+    .about-company-box__title
+        font-size: 30px
+
+    .advantages-list
+        margin-bottom: 180px
+        &:last-child
+            margin: 0
+
+    .advantages-image
+        top: 50%
