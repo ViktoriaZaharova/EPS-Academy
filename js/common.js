@@ -115,11 +115,9 @@ $('.works-slider').slick({
     slidesToScroll: 1,
     infinite: false,
     dots: false,
-
     draggable: false,
     swipe: false,
     touchMove: false,
-
     prevArrow: `
         <button class="slick-arrow slick-prev">
             <svg class="svg-icon">
@@ -137,18 +135,21 @@ $('.works-slider').slick({
     `,
 
     appendArrows: $('.works-slider-arrows'),
-
     responsive: [
         {
             breakpoint: 992,
             settings: {
-                slidesToShow: 2
+                slidesToShow: 2,
+                appendArrows: '.works-slider',
+                arrows: true
             }
         },
         {
             breakpoint: 576,
             settings: {
-                slidesToShow: 1
+                slidesToShow: 1,
+                appendArrows: '.works-slider',
+                arrows: true
             }
         }
     ]
@@ -168,3 +169,18 @@ $('.overlay-menu').on('click', function(){
     $('header .nav-menu').fadeOut();
     $('header').removeClass('open-menu');
 });
+
+
+if ($(window).width() <= 992) {
+
+  $('.steps-work-card__head').on('click', function () {
+
+    const parent = $(this).closest('.steps-work-card');
+
+    $('.steps-work-card').not(parent).removeClass('active');
+
+    parent.toggleClass('active');
+
+  });
+
+}

@@ -57,6 +57,7 @@
 .advantages-section
     position: relative
     z-index: 1
+    overflow: hidden
 
 .advantages-image
     position: absolute
@@ -530,6 +531,8 @@
         height: 100%
         display: flex
         flex-direction: column
+        h4
+            display: none
     h4
         margin: 0
     .box-text
@@ -544,7 +547,7 @@
         z-index: 1
         .box-text
             transition: 3s ease
-            display: none
+            // display: none
     &__number
         color: transparent
         -webkit-text-stroke: 2px #2F5FF5
@@ -557,11 +560,13 @@
         border: 2px solid #2F5FF5
         &::before
             opacity: 1
-        .steps-work-card
-
-            &__body
-                .box-text
-                    display: block
+    &__arrow
+        display: none
+        width: 14px
+        height: 14px
+        min-width: 14px
+        margin: 0 0 0 auto
+        fill: #98A3BA
 
 .partners-section
     padding: 200px 0 0
@@ -989,6 +994,8 @@
         width: 100%
         position: relative
         z-index: 2
+    h4
+        margin: 0
 
 .works-section
     border-top: 1px solid #22304D

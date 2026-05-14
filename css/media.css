@@ -100,7 +100,10 @@
     margin: 40px auto 0;
   }
   .steps-work-card__number {
-    font-size: 60px;
+    font-size: 50px;
+  }
+  .steps-work-card {
+    padding: 20px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -311,29 +314,121 @@
             flex: 100%;
     height: auto;
     padding: 20px;
+  }
+  .steps-work-card:first-child {
+    border-radius: 20px 20px 0 0;
+  }
+  .steps-work-card:last-child {
+    border-radius: 0 0 20px 20px;
+  }
+  .steps-work-card__head {
+    height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    width: 100%;
   }
-  .steps-work-card__head {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: auto;
-    min-width: 100px;
+  .steps-work-card__head h4 {
+    display: block;
   }
   .steps-work-card__number {
     font-size: 40px;
+    min-width: 200px;
+  }
+  .steps-work-card__body {
+    display: none;
+  }
+  .steps-work-card__body h4 {
+    display: none;
+  }
+  .steps-work-card__body .box-text {
+    margin: 20px 0 0;
+    font-size: 16px;
+    line-height: 140%;
+    display: block;
+  }
+  .steps-work-card__arrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .steps-work-card.active {
+    border: 2px solid #2F5FF5;
+    background: -webkit-gradient(linear, left bottom, left top, from(#0B1324), to(#0B1324));
+    background: linear-gradient(0deg, #0B1324, #0B1324);
+  }
+  .steps-work-card.active::before {
+    opacity: 1;
+  }
+  .steps-work-card.active .steps-work-card__body {
+    display: block;
+  }
+  .steps-work-card.active .steps-work-card__arrow {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    fill: #2f5ff5;
   }
   .works-section {
     padding: 60px 0 0;
+  }
+  .works-slider {
+    padding: 0 0 90px;
+  }
+  .works-slider .slick-arrow {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+  }
+  .works-slider .slick-next {
+    right: calc(50% - 55px);
+  }
+  .works-slider .slick-prev {
+    left: calc(50% - 55px);
+  }
+  .technical-equimpent {
+    padding: 60px 0 0;
+  }
+  .technical-equimpent-card {
+    height: 600px;
+  }
+  .stends {
+    padding: 30px 0 60px;
+  }
+  .stend-card__title {
+    max-width: none;
+  }
+  .stend-card .box-text {
+    max-width: none;
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .stend-card__img {
+    margin: 20px 0 0;
+  }
+  .photos-gallery-card {
+    padding: 20px;
+    height: 320px;
+  }
+  .photos-gallery-card:after {
+    height: 150px;
+  }
+  .photos-gallery {
+    padding-bottom: 60px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -423,10 +518,20 @@
     border-radius: 0;
     padding: 20px;
   }
+  .technical-equimpent-card {
+    height: 300px;
+    padding: 20px;
+  }
+  .technical-equimpent-card:after {
+    height: 150px;
+  }
 }
 @media only screen and (max-width: 576px) {
   h1 {
     font-size: 54px;
+  }
+  h4, .h4 {
+    font-size: 18px;
   }
   .advantages-image {
     width: 100%;
@@ -475,6 +580,21 @@
   .else-services-card:last-child {
     border-radius: 0 0 20px 20px;
   }
+  .steps-work-card h4 {
+    font-size: 18px;
+  }
+  .steps-work-card__number {
+    font-size: 20px;
+    min-width: 100px;
+  }
+  .certificates-bottom {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .certificates-section h2 br {
+    display: none;
+  }
 }
 @media only screen and (max-width: 370px) {
   .about-company-box__title {
@@ -488,5 +608,13 @@
   }
   .advantages-image {
     top: 50%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .steps-work-card__body .box-text {
+    display: none;
+  }
+  .steps-work-card:hover .steps-work-card__body .box-text {
+    display: block;
   }
 }

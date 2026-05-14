@@ -84,8 +84,10 @@
         margin: 40px auto 0
 
     .steps-work-card__number
-        font-size: 60px
+        font-size: 50px
 
+    .steps-work-card
+        padding: 20px
 
 @media only screen and (max-width: 992px)
     .main
@@ -273,21 +275,92 @@
         flex: 100%
         height: auto
         padding: 20px
-        display: flex
-        align-items: center
-        flex-direction: row
+        &:first-child
+            border-radius: 20px 20px 0 0
+        &:last-child
+            border-radius: 0 0 20px 20px
         &__head
-            width: fit-content
             height: auto
-            min-width: 100px
+            display: flex
+            align-items: center
+            flex-wrap: nowrap
+            flex-direction: row
+            width: 100%
+            h4
+                display: block
         &__number
             font-size: 40px
+            min-width: 200px
+        &__body
+            display: none
+            h4
+                display: none
+            .box-text
+                margin: 20px 0 0
+                font-size: 16px
+                line-height: 140%
+                display: block
+        &__arrow
+            display: flex
+            align-items: center
+            justify-content: center
+        &.active
+            border: 2px solid #2F5FF5
+            background: linear-gradient(0deg, #0B1324, #0B1324)
+
+            &::before
+                opacity: 1
+
+            .steps-work-card__body
+                display: block
+
+            .steps-work-card__arrow
+                transform: rotate(180deg)
+                fill: #2f5ff5
 
     .works-section
         padding: 60px 0 0
 
-    .works-slider-arrows
-        
+    .works-slider
+        padding: 0 0 90px
+        .slick-arrow
+            position: absolute
+            top: auto
+            bottom: 0
+        .slick-next
+            right: calc( 50% - 55px )
+
+        .slick-prev
+            left: calc(50% - 55px)
+
+    .technical-equimpent
+        padding: 60px 0 0
+
+    .technical-equimpent-card
+        height: 600px
+
+    .stends
+        padding: 30px 0 60px
+
+    .stend-card__title
+        max-width: none
+
+    .stend-card .box-text
+        max-width: none
+        font-size: 16px
+        line-height: 140%
+
+    .stend-card__img
+        margin: 20px 0 0
+
+    .photos-gallery-card
+        padding: 20px
+        height: 320px
+        &:after
+            height: 150px
+
+    .photos-gallery
+        padding-bottom: 60px
 
 @media only screen and (max-width: 768px)
     .advantages-box
@@ -338,7 +411,6 @@
             border-radius: 20px 20px 0 0
             &::before
                 border-radius: 20px 20px 0 0
-                
 
     .stages-work-card-last
         border-radius: 0 0 20px 20px
@@ -346,7 +418,6 @@
             border-radius: 0 0 20px 20px
             &::before
                 border-radius: 0 0 20px 20px
-                
 
     .stages-work-card__content
         max-width: none
@@ -356,9 +427,19 @@
         border-radius: 0
         padding: 20px
 
+    .technical-equimpent-card
+        height: 300px
+        padding: 20px
+
+    .technical-equimpent-card:after
+        height: 150px
+
 @media only screen and (max-width: 576px)
     h1
         font-size: 54px
+
+    h4, .h4
+        font-size: 18px
 
     .advantages-image
         width: 100%
@@ -391,6 +472,20 @@
         &:last-child
             border-radius: 0 0 20px 20px
 
+    .steps-work-card
+        h4
+            font-size: 18px
+        &__number
+            font-size: 20px
+            min-width: 100px
+
+    .certificates-bottom
+        justify-content: space-between
+
+    .certificates-section h2
+        br
+            display: none
+
 @media only screen and (max-width: 480px)
 
 @media only screen and (max-width: 420px)
@@ -406,3 +501,14 @@
 
     .advantages-image
         top: 50%
+
+@media only screen and (min-width: 992px)
+    .steps-work-card
+        &__body
+            .box-text
+                display: none
+        &:hover
+            .steps-work-card
+                &__body
+                    .box-text
+                        display: block

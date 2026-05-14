@@ -65,6 +65,7 @@
 .advantages-section {
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 
 .advantages-image {
@@ -728,6 +729,9 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.steps-work-card__head h4 {
+  display: none;
+}
 .steps-work-card h4 {
   margin: 0;
 }
@@ -746,7 +750,6 @@
 .steps-work-card__body .box-text {
   -webkit-transition: 3s ease;
   transition: 3s ease;
-  display: none;
 }
 .steps-work-card__number {
   color: transparent;
@@ -764,8 +767,13 @@
 .steps-work-card:hover::before {
   opacity: 1;
 }
-.steps-work-card:hover .steps-work-card__body .box-text {
-  display: block;
+.steps-work-card__arrow {
+  display: none;
+  width: 14px;
+  height: 14px;
+  min-width: 14px;
+  margin: 0 0 0 auto;
+  fill: #98A3BA;
 }
 
 .partners-section {
@@ -1360,6 +1368,9 @@
   width: 100%;
   position: relative;
   z-index: 2;
+}
+.technical-equimpent-card h4 {
+  margin: 0;
 }
 
 .works-section {
