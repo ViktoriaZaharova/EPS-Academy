@@ -732,7 +732,7 @@
 .steps-work-card__head h4 {
   display: none;
 }
-.steps-work-card h4 {
+.steps-work-card .h4 {
   margin: 0;
 }
 .steps-work-card .box-text {

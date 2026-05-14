@@ -177,7 +177,7 @@
   .mb-140 {
     margin-bottom: 60px;
   }
-  input, textarea, select {
+  input, textarea, select, .label-file {
     font-size: 16px;
   }
   input, select {
@@ -361,7 +361,7 @@
             flex-direction: row;
     width: 100%;
   }
-  .steps-work-card__head h4 {
+  .steps-work-card__head .h4 {
     display: block;
   }
   .steps-work-card__number {
@@ -722,7 +722,7 @@
   .else-services-card:last-child {
     border-radius: 0 0 20px 20px;
   }
-  .steps-work-card h4 {
+  .steps-work-card .h4 {
     font-size: 18px;
   }
   .steps-work-card__number {
@@ -766,6 +766,9 @@
   .modal-header .btn-close {
     top: 10px;
     right: 10px;
+  }
+  .modal-header .box-text {
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 370px) {

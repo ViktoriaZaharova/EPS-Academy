@@ -174,6 +174,16 @@ footer:after {
   padding: 0;
   border: none;
   border-radius: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.modal-header .box-text {
+  margin: 20px 0 0;
+  width: 100%;
+  color: #C7CFDF;
 }
 .modal-header .btn-close {
   position: absolute;
@@ -201,4 +211,8 @@ footer:after {
 .modal-body {
   padding: 0;
   margin: 30px 0 0;
+}
+
+.thanks-icon {
+  margin: 0 auto 20px;
 }
