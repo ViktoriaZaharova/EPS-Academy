@@ -7,6 +7,7 @@ footer {
   background: linear-gradient(0deg, #101A31, #101A31);
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 footer::before {
   content: "";
@@ -26,7 +27,7 @@ footer:after {
   width: 100%;
   height: 749px;
   background: url("../img/footer-decor.svg") no-repeat center;
-  background-size: 100%;
+  background-size: cover;
   z-index: -1;
 }
 
@@ -140,6 +141,7 @@ footer:after {
   color: #fff;
   margin: 0 0 0 auto;
   font-size: 24px;
+  font-family: "Exo2", sans-serif;
   font-weight: 500;
   line-height: 100%;
 }

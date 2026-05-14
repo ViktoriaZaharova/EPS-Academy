@@ -677,12 +677,12 @@
             <div class="steps-work-card">
               <div class="steps-work-card__head">
                 <div class="steps-work-card__number">2 этап</div>
-<h4>Согласование</h4>
-<div class="steps-work-card__arrow">
-  <svg class="svg-icon">
-    <use xlink:href="img/sprite.svg#arrow-bottom"></use>
-  </svg>
-</div>
+                <h4>Согласование</h4>
+                <div class="steps-work-card__arrow">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                  </svg>
+                </div>
               </div>
               <div class="steps-work-card__body">
                 <h4>Согласование</h4>
@@ -698,12 +698,12 @@
             <div class="steps-work-card">
               <div class="steps-work-card__head">
                 <div class="steps-work-card__number">3 этап</div>
-<h4>Восстановление</h4>
-<div class="steps-work-card__arrow">
-  <svg class="svg-icon">
-    <use xlink:href="img/sprite.svg#arrow-bottom"></use>
-  </svg>
-</div>
+                <h4>Восстановление</h4>
+                <div class="steps-work-card__arrow">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                  </svg>
+                </div>
               </div>
               <div class="steps-work-card__body">
                 <h4>Восстановление</h4>
@@ -720,11 +720,11 @@
               <div class="steps-work-card__head">
                 <div class="steps-work-card__number">4 этап</div>
                 <h4>Завершение ремонта</h4>
-<div class="steps-work-card__arrow">
-  <svg class="svg-icon">
-    <use xlink:href="img/sprite.svg#arrow-bottom"></use>
-  </svg>
-</div>
+                <div class="steps-work-card__arrow">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                  </svg>
+                </div>
               </div>
               <div class="steps-work-card__body">
                 <h4>Завершение ремонта</h4>
@@ -1115,16 +1115,23 @@
             <div class="subtitle-text">FAQ</div>
             <h2>Часто задаваемые вопросы</h2>
 
-            <div class="manager-box">
+            <div class="manager-box d-none d-lg-block">
               <div class="manager-box__avatar"><img src="img/avatar.png" alt=""></div>
               <div class="h4">Виктор</div>
               <div class="manager-box__position">Старший менеджер</div>
               <div class="box-text">
                 <p>Проведет консультацию и ответит на все ваши вопросы</p>
               </div>
+              <a href="#" class="btn btn-lg btn-v2 btn-accent btn-question d-flex d-lg-none" data-bs-toggle="modal"
+                data-bs-target="#callbackModal">
+                <span class="btn-text">Задать вопрос</span>
+                <span class="btn-icon"><svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
+                  </svg></span>
+              </a>
             </div>
 
-            <a href="#" class="btn btn-lg btn-v2 btn-accent btn-question" data-bs-toggle="modal"
+            <a href="#" class="btn btn-lg btn-v2 btn-accent btn-question d-none d-lg-flex" data-bs-toggle="modal"
               data-bs-target="#callbackModal">
               <span class="btn-text">Задать вопрос</span>
               <span class="btn-icon"><svg class="svg-icon">
@@ -1306,6 +1313,27 @@
             </div>
           </div>
 
+        </div>
+
+        <div class="col-12 d-block d-lg-none">
+          <div class="manager-box">
+            <div class="manager-box__head">
+              <div class="manager-box__avatar"><img src="img/avatar.png" alt=""></div>
+              <div class="manager-box__admin">
+                <div class="h4">Виктор</div>
+                <div class="manager-box__position">Старший менеджер</div>
+              </div>
+            </div>
+            <div class="manager-box__footer">
+              <div class="box-text">
+                <p>Проведет консультацию и ответит на все ваши вопросы</p>
+              </div>
+              <a href="#" class="btn btn-accent" data-bs-toggle="modal"
+                data-bs-target="#callbackModal">
+                <span class="btn-text">Задать вопрос</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

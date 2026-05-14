@@ -1,5 +1,10 @@
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1650px) {
+  .list-social {
+    margin: 0 auto;
+  }
+}
 @media only screen and (max-width: 1350px) {
   .nav-menu {
     margin: 0 auto 0 30px;
@@ -12,6 +17,9 @@
   }
   header .phone, header .address {
     margin: 0 20px 0 0;
+  }
+  .partners-box img {
+    max-width: 200px;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -104,6 +112,19 @@
   }
   .steps-work-card {
     padding: 20px;
+  }
+  .mail-link {
+    font-size: 18px;
+    margin: 0 0 0 20px;
+  }
+  .footer-phones a {
+    font-size: 18px;
+  }
+  .address-box {
+    font-size: 16px;
+  }
+  .schedule-box {
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -430,6 +451,93 @@
   .photos-gallery {
     padding-bottom: 60px;
   }
+  .question-section, .partners-section {
+    padding: 60px 0 0;
+  }
+  .accordion-button {
+    padding: 20px 0;
+    font-size: 18px;
+  }
+  .accordion-button::before {
+    margin: 0 20px 0 0;
+  }
+  .accordion-body {
+    padding: 0 0 20px;
+  }
+  .manager-box {
+    width: 100%;
+    max-width: none;
+    margin: 40px 0 0;
+  }
+  .manager-box__avatar {
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+    margin: 0 10px 0 0;
+  }
+  .manager-box__head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 14px;
+  }
+  .manager-box .box-text {
+    max-width: 240px;
+    font-size: 16px;
+    margin: 0 auto 0 0;
+  }
+  .manager-box__footer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 10px 0 0;
+  }
+  .partners-box {
+    padding: 4px 8px;
+    height: 250px;
+  }
+  .logo-footer {
+    max-width: 300px;
+  }
+  footer {
+    padding: 60px 0 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-center {
+    margin: 40px 0 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .menu-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    font-size: 14px;
+  }
+  .menu-footer li {
+    margin: 0 0 4px;
+  }
+  .menu-footer li:last-child {
+    margin: 0;
+  }
 }
 @media only screen and (max-width: 768px) {
   .advantages-box {
@@ -525,6 +633,37 @@
   .technical-equimpent-card:after {
     height: 150px;
   }
+  .footer-contacts {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 40px 0 0;
+  }
+  .schedule-box {
+    white-space: nowrap;
+  }
+  .list-social {
+    margin: 0 0 0 auto;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .footer-phones {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .mail-link {
+    width: 100%;
+    margin: 10px 0 0;
+  }
 }
 @media only screen and (max-width: 576px) {
   h1 {
@@ -595,6 +734,26 @@
   .certificates-section h2 br {
     display: none;
   }
+  .partners-box {
+    height: 100px;
+  }
+  .partners-box img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  footer:after {
+    width: 580px;
+    height: 230px;
+  }
+  .logo-footer {
+    max-width: 180px;
+  }
+  .schedule-box p {
+    margin: 0 0 4px;
+  }
+  .schedule-box p:last-child {
+    margin: 0;
+  }
 }
 @media only screen and (max-width: 370px) {
   .about-company-box__title {
@@ -608,6 +767,26 @@
   }
   .advantages-image {
     top: 50%;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  .h1 {
+    font-size: 30px;
+  }
+  .btn-burger {
+    width: 50px;
+    height: 60px;
+    min-width: 50px;
+  }
+  .phone {
+    font-size: 14px;
+  }
+  .container {
+    padding: 0 16px;
+  }
+  .logo {
+    max-width: 80px;
   }
 }
 @media only screen and (min-width: 992px) {
