@@ -103,4 +103,44 @@ footer
     font-weight: 500
     line-height: 100%          
 
+.modal-backdrop
+    background: #101A31
 
+.modal-dialog
+    max-width: 600px
+
+.modal-content
+    background: #101A31
+    border-radius: 20px
+    border: 2px solid $accent
+    box-shadow: 0px 0px 20px 0px #2F5FF599
+    padding: 50px 60px
+    color: #fff
+    position: relative
+    z-index: 1
+
+
+
+.modal-title
+    margin: 0
+
+.modal-header
+    padding: 0
+    border: none
+    border-radius: 0    
+    .btn-close
+        position: absolute
+        top: 20px
+        right: 20px
+        opacity: 1
+        width: 40px
+        height: 40px
+        stroke: #fff
+        background: transparent
+        padding: 4px
+        box-sizing: border-box
+        @include d-flex
+
+.modal-body
+    padding: 0
+    margin: 30px 0 0
